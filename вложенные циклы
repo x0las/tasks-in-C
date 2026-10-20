@@ -1,0 +1,150 @@
+/* ======================= вложенные циклы ======================= */
+
+/* Вывести прямоугольник из 4 строки 5 столбцов звездочек. */
+
+#include <stdio.h>
+
+int main() {
+    for (int i = 1; i <= 4; i++) {
+        for (int j = 1; j <= 5; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+/* Вывести квадрат 4 на 4, заполненный числами 1. */
+
+#include <stdio.h>
+
+int main() {
+    for (int i = 1; i <= 4; i++) {
+        for (int j = 1; j <= 4; j++) {
+            printf("1 ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+/* Вывести треугольник из звездочек высотой 5 строк. */
+
+#include <stdio.h>
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+/* Вывести числа от 1 до 5 в пяти строках. */
+
+#include <stdio.h>
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= 5; j++) {
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+/* Вывести таблицу умножения от 1 до 5. */
+
+#include <stdio.h>
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= 5; j++) {
+            printf("%d ", i * j);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+/* Вывести треугольник из звездочек, в котором в первой строке 5 звездочек, ,а в каждой следующей на одну меньше. */
+
+#include <stdio.h>
+
+int main() {
+    for (int i = 5; i >= 1; i--) {
+        for (int j = 1; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+/* Вывести 4 строки. В каждой строке повторить номер строки 3 раза. */
+
+#include <stdio.h>
+
+int main() {
+    for (int i = 1; i <= 4; i++) {
+        for (int j = 1; j <= 3; j++) {
+            printf("%d ", i);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+/* Вывести 3 строки по 4 числа. В каждой строке числа от 1 до 4. */
+
+#include <stdio.h>
+
+int main() {
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 1; j <= 4; j++) {
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+/* Вывести треугольник из чисел. В первой строке число 1, во второй числа 1 2, в третьей числа 1 2 3 и так далее до 5. */
+
+#include <stdio.h>
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= i; j++) {
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+/* Вывести таблицу сумм чисел от 1 до 5. В каждой ячейке выводить сумму номера строки и номера столбца. */
+
+#include <stdio.h>
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= 5; j++) {
+            printf("%d ", i + j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
