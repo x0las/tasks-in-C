@@ -1,0 +1,59 @@
+/* Тема. Строковые функции */
+/* Задания. Написать реализацию функций и программу для их демонстрации */
+
+#include <stdio.h>
+
+int my_strlen(char s[]) {
+	int i = 0;
+	while (s[i] != '\0') {
+		i = i + 1;
+	}
+	return i;
+}
+
+void my_strcpy(char to[], char from[]) {
+	int i = 0;
+	while (from[i] != '\0') {
+		to[i] = from[i];
+		i = i + 1;
+	}
+	to[i] = '\0';
+}
+
+void my_reverse(char s[]) {
+	int n = my_strlen(s);
+	int i = 0;
+	int j;
+	char c;
+
+	if (n > 0 && s[n - 1] == '\n') {
+		j = n - 2;
+	} else {
+		j = n - 1;
+	}
+
+	while (i < j) {
+		c = s[i];
+		s[i] = s[j];
+		s[j] = c;
+		i = i + 1;
+		j = j - 1;
+	}
+}
+
+int main() {
+	char a[100] = "Hello";
+	char b[100];
+	char d[100] = "abcdef\n";
+
+	my_strcpy(b, a);
+	printf("%s\n", b);
+
+	my_reverse(b);
+	printf("%s\n", b);
+
+	my_reverse(d);
+	printf("%s", d);
+
+	return 0;
+}
